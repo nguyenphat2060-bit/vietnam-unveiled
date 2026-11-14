@@ -1,0 +1,100 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --primary-emerald: #0F382C;
+    --primary-emerald-hover: #164e3e;
+    --imperial-gold: #D4AF37;
+    --imperial-gold-hover: #BF9B2D;
+    --gold-subtle: #F6F1E3;
+    --terracotta: #E05A47;
+    --terracotta-hover: #CA4836;
+    --warm-cream: #FAF9F6;
+    --obsidian: #121212;
+    --obsidian-surface: #1E1E1E;
+    --obsidian-border: #2D2D2D;
+
+    --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  body {
+    background-color: var(--warm-cream);
+    color: var(--obsidian);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-panel-dark {
+  background: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF1B0 0%, #D4AF37 50%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emerald-gradient {
+  background: linear-gradient(135deg, #0F382C 0%, #082119 100%);
+}
+
+.gold-border {
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0f382c;
+}
+
+/* Leaflet override for high luxury dark / light mode */
+.leaflet-container {
+  font-family: inherit;
+  z-index: 10;
+  border-radius: 1rem;
+}
+.leaflet-popup-content-wrapper {
+  background: #121212 !important;
+  color: #fff !important;
+  border-radius: 12px !important;
+  padding: 4px !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+.leaflet-popup-tip {
+  background: #121212 !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+}
+.leaflet-popup-content {
+  margin: 10px 14px !important;
+  line-height: 1.4 !important;
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "sub-1794667354690",
+    "email": "phathayha@gmail.com",
+    "subscribedAt": "21:42 14/11/2026",
+    "status": "active",
+    "welcomeEmailSent": true
+  },
+  {
+    "id": "sub-1794042559067",
+    "email": "locphat12333@gmail.com",
+    "subscribedAt": "16:09 07/11/2026",
+    "status": "active",
+    "welcomeEmailSent": true
+  },
+  {
+    "id": "sub-101",
+    "email": "traveler.hanoi@gmail.com",
+    "subscribedAt": "01/11/2026 09:30",
+    "status": "active",
+    "welcomeEmailSent": true
+  },
+  {
+    "id": "sub-102",
+    "email": "luxurypassport@outlook.com",
+    "subscribedAt": "03/11/2026 14:15",
+    "status": "active",
+    "welcomeEmailSent": true
+  },
+  {
+    "id": "sub-103",
+    "email": "danang.explorer@yahoo.com",
+    "subscribedAt": "05/11/2026 18:40",
+    "status": "active",
+    "welcomeEmailSent": true
+  }
+]
